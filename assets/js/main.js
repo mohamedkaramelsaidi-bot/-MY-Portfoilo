@@ -1,11 +1,4 @@
 
-
-(function() {
-  "use strict";
-
-  /**
-   * Header scroll class
-   */
   function toggleScrolled() {
     const selectBody = document.querySelector('body');
     const selectHeader = document.querySelector('#header');
@@ -108,6 +101,7 @@
     new Waypoint({
       element: item,
       offset: '80%',
+
       handler: function(direction) {
         let progress = item.querySelectorAll('.progress .progress-bar');
         progress.forEach(el => {
@@ -173,8 +167,7 @@ sliders.forEach(function(slider) {
    */
   window.addEventListener('load', navmenuScrollspy);
   document.addEventListener('scroll', navmenuScrollspy); 
-
-})();
+;
 
 
 
